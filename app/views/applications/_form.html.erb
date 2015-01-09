@@ -1,0 +1,326 @@
+<%= form_for @application, :html => { :class => 'form-horizontal' } do |f| %>
+
+  
+
+  <section id="startupid" class="all-sections">
+        
+
+
+                <div class="page-header">
+                  <h1>Basic Information</h1>
+                </div>  
+
+
+                <div class="form-group">
+                  <%= f.label :startup, :class => 'control-label' %>
+                  <div class="controls">
+                    <%= f.text_field :startup, :class => 'form-control input-lg' %>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <%= f.label :company, :class => 'control-label' %>
+                  <div class="controls">
+                    <%= f.text_field :company, :class => 'form-control input-lg' %>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <%= f.label :activity, :class => 'control-label' %>
+                  <div class="controls">
+                    <%= f.text_field :activity, :class => 'form-control input-lg' %>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <%= f.label :address, :class => 'control-label' %>
+                  <div class="controls">
+                    <%= f.text_field :address, :class => 'form-control input-lg' %>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <%= f.label :city, :class => 'control-label' %>
+                  <div class="controls">
+                    <%= f.text_field :city, :class => 'form-control input-lg' %>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <%= f.label :region, :class => 'control-label' %>
+                  <div class="controls">
+                    <%= f.text_field :region, :class => 'form-control input-lg' %>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <%= f.label :phone, :class => 'control-label' %>
+                  <div class="controls">
+                    <%= f.text_field :phone, :class => 'form-control input-lg' %>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <%= f.label :website, :class => 'control-label' %>
+                  <div class="controls">
+                    <%= f.text_field :website, :class => 'form-control input-lg' %>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <%= f.label :email, :class => 'control-label' %>
+                  <div class="controls">
+                    <%= f.text_field :email, :class => 'form-control input-lg' %>
+                  </div>
+                </div>
+                
+     
+  </section>
+
+
+
+
+<section id="representative" class="all-sections">
+
+        <div class="page-header">
+            <h1>Representative's Information</h1>
+        </div>  
+
+
+        <div class="form-group">
+          <%= f.label :representative_name, :class => 'control-label' %>
+          <div class="controls">
+            <%= f.text_field :representative_name, :class => 'form-control input-lg' %>
+          </div>
+        </div>
+
+
+          <div class="form-group">
+            <%= f.label :representative_rut, :class => 'control-label' %>
+            <div class="controls">
+              <%= f.text_field :representative_rut, :class => 'form-control input-lg' %>
+            </div>
+          </div>
+          <div class="form-group">
+            <%= f.label :director, :class => 'control-label' %>
+            <div class="controls">
+              <%= f.text_field :director, :class => 'form-control input-lg' %>
+            </div>
+          </div>
+          <div class="form-group">
+            <%= f.label :directors_email, :class => 'control-label' %>
+            <div class="controls">
+              <%= f.text_field :directors_email, :class => 'form-control input-lg' %>
+            </div>
+          </div>
+          <div class="form-group">
+            <%= f.label :directors_phone, :class => 'control-label' %>
+            <div class="controls">
+              <%= f.text_field :directors_phone, :class => 'form-control input-lg' %>
+            </div>
+          </div>
+</section>
+
+
+
+
+<section id="startupbasic" class="all-sections">
+
+  <div class="page-header">
+      <h1>Startup Information</h1>
+  </div> 
+
+  <div class="form-group">
+    <%= f.label :objective, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :objective, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :description, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :description, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :industry, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :industry, :class => 'form-control input-lg' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :industry_subcategories, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :industry_subcategories, :class => 'form-control input-lg' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :product_type, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :product_type, :class => 'form-control input-lg' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :phase, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :phase, :class => 'form-control input-lg' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :summary, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :summary, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :video, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :video, :class => 'form-control input-lg' %>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<section id="business" class="all-sections">
+
+  <div class="page-header">
+      <h1>Business</h1>
+  </div> 
+
+
+
+  <div class="form-group">
+    <%= f.label :problem, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :problem, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :business_plan, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :business_plan, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :value, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :value, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :technical_development, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :technical_development, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :business_development, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :business_development, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :research, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :research, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :market, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :market, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :customer_adquisition, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :customer_adquisition, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :business_expansion, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :business_expansion, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :business_networks, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :business_networks, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :why_chile, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :why_chile, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :revenue_model, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :revenue_model, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :expected_sales, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :expected_sales, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :critical_uncertains, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :critical_uncertains, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :investment_plan, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :investment_plan, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+
+</section>
+
+
+
+<section id="team" class="all-sections">
+
+  <div class="page-header">
+      <h1>Team</h1>
+  </div> 
+
+
+  <div class="form-group">
+    <%= f.label :founding_team, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :founding_team, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :full_time_members, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :full_time_members, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :new_participants, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :new_participants, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :new_employees, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :new_employees, :class => 'form-control input-lg' %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :working_schedule, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :working_schedule, :class => 'text_area form-control', :size => "10x5" %>
+    </div>
+  </div>
+
+</section>  
+  <br />
+  <div class="form-group">
+    <%= f.submit nil, :class => 'btn btn-lg btn-primary' %>
+    
+  </div>
+<% end %>
