@@ -9,6 +9,7 @@ gem 'pg'
 gem "twitter-bootstrap-rails"
 gem 'prawn'
 gem 'prawnto'
+gem 'devise'
 
 # Gems used only for assets and not required
 # in production environments by default.

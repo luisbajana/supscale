@@ -14,55 +14,55 @@
                 <div class="form-group">
                   <%= f.label :startup, :class => 'control-label' %>
                   <div class="controls">
-                    <%= f.text_field :startup, :class => 'form-control input-lg', :placeholder=>"Next Facebook" %>
+                    <%= f.text_field :startup, :class => 'form-control input-lg', :data => { :validation => 'required' }, :placeholder=>"The Next Internet Hit" %>
                   </div>
                 </div>
                 <div class="form-group">
                   <%= f.label :company, :class => 'control-label' %>
                   <div class="controls">
-                    <%= f.text_field :company, :class => 'form-control input-lg', :placeholder=>"Digital Creations SPA" %>
+                    <%= f.text_field :company, :class => 'form-control input-lg', :data => { :validation => 'required' }, :placeholder=>"Digital Creations SpA" %>
                   </div>
                 </div>
                 <div class="form-group">
                   <%= f.label :activity, :class => 'control-label' %>
                   <div class="controls">
-                    <%= f.text_field :activity, :class => 'form-control input-lg', :placeholder=>"Software and Services" %>
+                    <%= f.text_field :activity, :class => 'form-control input-lg', :data => { :validation => 'required' }, :placeholder=>"Software and Services" %>
                   </div>
                 </div>
                 <div class="form-group">
                   <%= f.label :address, :class => 'control-label' %>
                   <div class="controls">
-                    <%= f.text_field :address, :class => 'form-control input-lg', :placeholder=>"Santo Domingo 760" %>
+                    <%= f.text_field :address, :class => 'form-control input-lg', :data => { :validation => 'required' }, :placeholder=>"Santo Domingo 760" %>
                   </div>
                 </div>
                 <div class="form-group">
                   <%= f.label :city, :class => 'control-label' %>
                   <div class="controls">
-                    <%= f.text_field :city, :class => 'form-control input-lg', :placeholder=>"Santiago, Chile" %>
+                    <%= f.text_field :city, :class => 'form-control input-lg', :data => { :validation => 'required' }, :placeholder=>"Santiago, Chile" %>
                   </div>
                 </div>
                 <div class="form-group">
                   <%= f.label :region, :class => 'control-label' %>
                   <div class="controls">
-                    <%= f.text_field :region, :class => 'form-control input-lg', :placeholder=>"Región Metropolitana" %>
+                    <%= f.text_field :region, :class => 'form-control input-lg', :data => { :validation => 'required' }, :placeholder=>"Región Metropolitana" %>
                   </div>
                 </div>
                 <div class="form-group">
                   <%= f.label :phone, :class => 'control-label' %>
                   <div class="controls">
-                    <%= f.text_field :phone, :class => 'form-control input-lg' %>
+                    <%= f.text_field :phone, :class => 'form-control input-lg', :data => { :validation => 'required' } %>
                   </div>
                 </div>
                 <div class="form-group">
                   <%= f.label :website, :class => 'control-label' %>
                   <div class="controls">
-                    <%= f.text_field :website, :class => 'form-control input-lg' %>
+                    <%= f.text_field :website, :class => 'form-control input-lg', :data => { :validation => 'required' } %>
                   </div>
                 </div>
                 <div class="form-group">
                   <%= f.label :email, :class => 'control-label' %>
                   <div class="controls">
-                    <%= f.text_field :email, :class => 'form-control input-lg' %>
+                    <%= f.text_field :email, :class => 'form-control input-lg', :data => { :validation => 'email' } %>
                   </div>
                 </div>
                 
@@ -82,7 +82,7 @@
         <div class="form-group">
           <%= f.label :representative_name, :class => 'control-label' %>
           <div class="controls">
-            <%= f.text_field :representative_name, :class => 'form-control input-lg' %>
+            <%= f.text_field :representative_name, :class => 'form-control input-lg', :data => { :validation => 'required' } %>
           </div>
         </div>
 
@@ -90,25 +90,25 @@
           <div class="form-group">
             <%= f.label :representative_rut, :class => 'control-label' %>
             <div class="controls">
-              <%= f.text_field :representative_rut, :class => 'form-control input-lg' %>
+              <%= f.text_field :representative_rut, :class => 'form-control input-lg', :data => { :validation => 'required' } %>
             </div>
           </div>
           <div class="form-group">
             <%= f.label :director, :class => 'control-label' %>
             <div class="controls">
-              <%= f.text_field :director, :class => 'form-control input-lg' %>
+              <%= f.text_field :director, :class => 'form-control input-lg', :data => { :validation => 'required' } %>
             </div>
           </div>
           <div class="form-group">
             <%= f.label :directors_email, :class => 'control-label' %>
             <div class="controls">
-              <%= f.text_field :directors_email, :class => 'form-control input-lg' %>
+              <%= f.text_field :directors_email, :class => 'form-control input-lg', :data => { :validation => 'required' } %>
             </div>
           </div>
           <div class="form-group">
             <%= f.label :directors_phone, :class => 'control-label' %>
             <div class="controls">
-              <%= f.text_field :directors_phone, :class => 'form-control input-lg' %>
+              <%= f.text_field :directors_phone, :class => 'form-control input-lg', :data => { :validation => 'required' } %>
             </div>
           </div>
 </section>
@@ -123,51 +123,51 @@
   </div> 
 
   <div class="form-group">
-    <%= f.label :objective, :class => 'control-label' %>
+    <%= f.label :objective, :class => 'control-label' %> (<span id="omaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :objective, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :objective, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Briefly define the overall objective of the startup during the program." %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :description, :class => 'control-label' %>
+    <%= f.label :description, :class => 'control-label' %> (<span id="dmaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :description, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :description, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Will be published upon acceptance to the Program." %>
     </div>
   </div>
   <div class="form-group">
     <%= f.label :industry, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :industry, :class => 'form-control input-lg' %>
+      <%= f.text_field :industry, :class => 'form-control input-lg', :data => { :validation => 'required' } %>
     </div>
   </div>
   <div class="form-group">
     <%= f.label :industry_subcategories, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :industry_subcategories, :class => 'form-control input-lg' %>
+      <%= f.text_field :industry_subcategories, :class => 'form-control input-lg', :data => { :validation => 'required' } %>
     </div>
   </div>
   <div class="form-group">
     <%= f.label :product_type, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :product_type, :class => 'form-control input-lg' %>
+      <%= f.text_field :product_type, :class => 'form-control input-lg', :data => { :validation => 'required' } %>
     </div>
   </div>
   <div class="form-group">
     <%= f.label :phase, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :phase, :class => 'form-control input-lg' %>
+      <%= f.text_field :phase, :class => 'form-control input-lg', :data => { :validation => 'required' } %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :summary, :class => 'control-label' %>
+    <%= f.label :summary, :class => 'control-label' %> (<span id="smaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :summary, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :summary, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Briefly describe the problems that your company has resolved, the proposed expansion, the target market, its size and growth, sales obtained in the last 12 months and during your participation in the Start-Up Chile program during the 6 months and the expected results of during the program." %>
     </div>
   </div>
   <div class="form-group">
     <%= f.label :video, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :video, :class => 'form-control input-lg' %>
+      <%= f.text_field :video, :class => 'form-control input-lg', :data => { :validation => 'required' } %>
     </div>
   </div>
 
@@ -185,93 +185,110 @@
 
 
   <div class="form-group">
-    <%= f.label :problem, :class => 'control-label' %>
+    <%= f.label :problem, :class => 'control-label' %> (<span id="pmaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :problem, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :problem, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Customer engagement and revenue showing validation. How much Traction has your solution? How have you tracked this traction?" %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :business_plan, :class => 'control-label' %>
+    <%= f.label :business_plan, :class => 'control-label' %> (<span id="bmaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :business_plan, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :business_plan, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Specify what the business and expansion plan is." %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :value, :class => 'control-label' %>
+    <%= f.label :value, :class => 'control-label' %> (<span id="vmaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :value, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :value, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Please describe what you are offering. What is new/innovative about what you are doing? How do you create value for your customers? How do you capture value? Is there any relevant Intellectual Property? " %>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="form-group">
+    <%= f.label :technical_development, :class => 'control-label' %> (<span id="tmaxlength">300</span> characters left)
+    <div class="controls">
+      <%= f.text_area :technical_development, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"What’s the level of technical development of the solution? Describe how you’re going to increase the level of effectiveness and efficiency." %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :technical_development, :class => 'control-label' %>
+    <%= f.label :business_development, :class => 'control-label' %> (<span id="bdmaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :technical_development, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :business_development, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"What’s the level of business development of your startup? How many clients do you have right now? What are your sales (USD) in the last 12 months? Have you raised any private capital? How much and when? Describe the objectives and plan of that investment." %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :business_development, :class => 'control-label' %>
+    <%= f.label :research, :class => 'control-label' %> (<span id="rmaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :business_development, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :research, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Specify what studies and research has been done around your company’s solution. Please detail if your solution is worthy of applying for Intellectual Property." %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :research, :class => 'control-label' %>
+    <%= f.label :market, :class => 'control-label' %> (<span id="ammaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :research, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :market, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Describe the size of the market, growth and trends of the target market. Why is this your market? What are the channels used to connect with it?" %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :market, :class => 'control-label' %>
+    <%= f.label :customer_adquisition, :class => 'control-label' %> (<span id="camaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :market, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :customer_adquisition, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Describe your customer acquisition strategies. Growth hacking?" %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :customer_adquisition, :class => 'control-label' %>
+    <%= f.label :business_expansion, :class => 'control-label' %> (<span id="bemaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :customer_adquisition, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :business_expansion, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Briefly describe how is your business is going to expand internationally. How is this going to happen geographically?"  %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :business_expansion, :class => 'control-label' %>
+    <%= f.label :business_networks, :class => 'control-label' %> (<span id="bnmaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :business_expansion, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :business_networks, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Who are your most relevant collaborators, mentors and advisors? Who are your business partners for expanding your company, such as universities, clients, providers, capital investments funds? What value do they add to the company?
+Detail what strategic partnerships you need to acquire in order to take the expansion forward. How are you going to get them?"  %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :business_networks, :class => 'control-label' %>
+    <%= f.label "Why Chile?", :class => 'control-label' %> (<span id="wcmaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :business_networks, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :why_chile, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Describe all the factors that made you decide to use Chile as a platform. Why aren’t you building operations elsewhere?"  %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :why_chile, :class => 'control-label' %>
+    <%= f.label :revenue_model, :class => 'control-label' %> (<span id="rmmaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :why_chile, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :revenue_model, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Describe how your company is going to generate and grow their revenues. What’s your sale strategy?" %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :revenue_model, :class => 'control-label' %>
+    <%= f.label :expected_sales, :class => 'control-label' %> (<span id="esmaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :revenue_model, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :expected_sales, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Show your sales projection for the next 2 years. Detail you economical and business assumptions." %>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="form-group">
+    <%= f.label :critical_uncertains, :class => 'control-label' %> (<span id="cumaxlength">300</span> characters left)
+    <div class="controls">
+      <%= f.text_area :critical_uncertains, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Briefly describe what uncertainties (business, technological, technical, legal, etc.), can impact your company and how." %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :expected_sales, :class => 'control-label' %>
+    <%= f.label :investment_plan, :class => 'control-label' %> (<span id="ipmaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :expected_sales, :class => 'text_area form-control', :size => "10x5" %>
-    </div>
-  </div>
-  <div class="form-group">
-    <%= f.label :critical_uncertains, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_area :critical_uncertains, :class => 'text_area form-control', :size => "10x5" %>
-    </div>
-  </div>
-  <div class="form-group">
-    <%= f.label :investment_plan, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_area :investment_plan, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :investment_plan, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Detail what’s your quarterly plan of expansion for growing your company, and the strategies applied to it. Detail the plan of investment needed for it." %>
     </div>
   </div>
 
@@ -287,33 +304,33 @@
 
 
   <div class="form-group">
-    <%= f.label :founding_team, :class => 'control-label' %>
+    <%= f.label :founding_team, :class => 'control-label' %> (<span id="ftmaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :founding_team, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :founding_team, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Identify each one of them, summary of their education degrees, relevant work experience as employee and entrepreneur and any key abilities for the company’s growth." %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :full_time_members, :class => 'control-label' %>
+    <%= f.label :full_time_members, :class => 'control-label' %> (<span id="ftmmaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :full_time_members, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :full_time_members, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Identify how many of the participants are working full time on the company and for how long." %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :new_participants, :class => 'control-label' %>
+    <%= f.label :new_participants, :class => 'control-label' %> (<span id="npmaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :new_participants, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :new_participants, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"What set of capacities does the founding team lack, what will the new participants add to the current team. When and how are you going to add them? Detail which ones are going join as partners and employees." %>
     </div>
   </div>
   <div class="form-group">
     <%= f.label :new_employees, :class => 'control-label' %>
     <div class="controls">
-      <%= f.number_field :new_employees, :class => 'form-control input-lg' %>
+      <%= f.number_field :new_employees, :class => 'form-control input-lg', :data => { :validation => 'required' } %>
     </div>
   </div>
   <div class="form-group">
-    <%= f.label :working_schedule, :class => 'control-label' %>
+    <%= f.label :working_schedule, :class => 'control-label' %> (<span id="wscmaxlength">300</span> characters left)
     <div class="controls">
-      <%= f.text_area :working_schedule, :class => 'text_area form-control', :size => "10x5" %>
+      <%= f.text_area :working_schedule, :class => 'text_area form-control', :size => "10x5", :data => { :validation => 'required' }, :placeholder=>"Detail the main activities the company will take forward during the program, the expected results and timeframe. Remember to check the T&C where you can find the approved activities funded by the program. Remember that the program can only last up to 12 months." %>
     </div>
   </div>
 
