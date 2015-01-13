@@ -258,3 +258,12 @@ label.col-sm-4.control-label {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+
+.header{
+    color: white !important;
+}
+
+.header p{
+    font-size: 150%;
+    font-weight: 100;
+}
