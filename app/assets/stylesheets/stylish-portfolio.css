@@ -1,11 +1,3 @@
-/*!
- * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-/* Global Styles */
-
 html,
 body {
     width: 100%;
@@ -30,7 +22,6 @@ body {
     font-weight: 700;
 }
 
-/* Custom Button Styles */
 
 .btn-dark {
     border-radius: 0;
@@ -58,13 +49,13 @@ body {
     background-color: rgba(255,255,255,0.8);
 }
 
-/* Custom Horizontal Rule */
+
 
 hr.small {
     max-width: 100px;
 }
 
-/* Side Menu */
+
 
 #sidebar-wrapper {
     z-index: 1000;
@@ -149,7 +140,7 @@ hr.small {
     margin: 5px 5px 0 0;
 }
 
-/* Header */
+
 
 .header {
     display: table;
@@ -163,13 +154,12 @@ hr.small {
     -o-background-size: cover;
 }
 
-/* About */
+
 
 .about {
     padding: 50px 0;
 }
 
-/* Services */
 
 .services {
     padding: 50px 0;
@@ -179,7 +169,6 @@ hr.small {
     margin-bottom: 30px;
 }
 
-/* Callout */
 
 .callout {
     display: table;
@@ -193,7 +182,6 @@ hr.small {
     -o-background-size: cover;
 }
 
-/* Portfolio */
 
 .portfolio {
     padding: 50px 0;
@@ -211,7 +199,6 @@ hr.small {
     opacity: 0.8;
 }
 
-/* Call to Action */
 
 .call-to-action {
     padding: 50px 0;
@@ -221,7 +208,6 @@ hr.small {
     margin: 10px;
 }
 
-/* Map */
 
 .map {
     height: 500px;
@@ -233,7 +219,6 @@ hr.small {
     }
 }
 
-/* Footer */
 
 footer {
     padding: 100px 0;
